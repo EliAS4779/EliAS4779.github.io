@@ -1,34 +1,41 @@
+/* Font and Backround: */
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: large;
-  background-color: rgb(45,17,11);
+  background-color: #27272a;
 }
+
+/* Headline: */
 .headline {
-  color: rgb(230, 110, 6);
+  color: #fff;
   display: flex;
   justify-content: center;
 }
+
+/* Panels */
 a {
-  color: rgb(255, 232, 210);
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
-  background-color: rgb(170, 97, 27);
+  background-color: #3c3c41;
   padding: 20px;
   width: 300px;
   display: inline-flex;
   justify-content: center;
   border-radius: 20px;
   box-sizing: border-box;
-  border: 2px solid rgb(170, 97, 27);
+  border: 2px solid #3c3c41;
   align-items: center;
 }
 a:hover {
-  color: rgb(153, 83, 23);
+  color: #3c3c41;
   text-decoration: none;
   font-weight: 500;
-  background-color: rgb(255, 232, 210);
-  border: 2px solid rgb(170, 97, 27);
+  background-color: #fff;
+  border: 2px solid #27272a;
 }
+
+/* Header Positioning */
 .header {
   display: flex;
   justify-content: center;
@@ -39,33 +46,37 @@ a:hover {
 }
 .link a {
   text-decoration: none;
-  color: rgb(255, 232, 210);
-  transition: 0.3s;
+  color: #fff;
+  transition: 0.25s;
   transform: translateY(0);
 }
 .link a:hover {
-  text-shadow: 2px 2px 4px rgb(112, 59, 10);
-  color: rgb(170, 97, 27);
+  text-shadow: 2px 2px 4px #3c3c41;
+  color: #3c3c41;
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(136, 43, 43, 0.2);
+  box-shadow: 0 10px 20px #3c3c41;
 }
 .img {
   border-radius: 50%;
 }
-.link a[href*="youtube"] .icon {
-  background-image: url("./images/ytbright.png");
+.link a[href*='youtube'] .icon {
+  background-image: url('./images/ytbright.png');
   background-size: 32px 32px;
 }
-.link a[href*="github"] .icon {
-  background-image: url("./images/gitbright.png");
+.link a[href*='github'] .icon {
+  background-image: url('./images/gitbright.png');
   background-size: 32px 32px;
 }
-.link a[href*="x.com"] .icon {
-  background-image: url("./images/xbright.png");
+.link a[href*='x.com'] .icon {
+  background-image: url('./images/xbright.png');
   background-size: 32px 32px;
 }
-.link a[href*="dsc"] .icon {
-  background-image: url("./images/dcbright.png");
+.link a[href*='dsc'] .icon {
+  background-image: url('./images/discordb.png');
+  background-size: 32px 32px;
+}
+.link a[href*='twitch'] .icon {
+  background-image: url('./images/twitchb.png');
   background-size: 32px 32px;
 }
 .icon {
@@ -74,21 +85,33 @@ a:hover {
   width: 32px;
   height: 32px;
 }
-.link a[href*="youtube"]:hover .icon {
-  background-image: url("./images/ytdark.png");
+.link a[href*='youtube']:hover .icon {
+  background-image: url('./images/ytdark.png');
   background-size: 32px 32px;
 }
 
-.link a[href*="github"]:hover .icon {
-  background-image: url("./images/gitdark.png");
+.link a[href*='github']:hover .icon {
+  background-image: url('./images/gitdark.png');
   background-size: 32px 32px;
 }
 
-.link a[href*="x.com"]:hover .icon {
-  background-image: url("./images/xdark.png");
+.link a[href*='x.com']:hover .icon {
+  background-image: url('./images/xdark.png');
   background-size: 32px 32px;
 }
-.link a[href*="dsc"]:hover .icon {
-  background-image: url("./images/dcdark.png");
+.link a[href*='dsc']:hover .icon {
+  background-image: url('./images/discordd.png');
   background-size: 32px 32px;
+}
+.link a[href*='twitch']:hover .icon {
+  background-image: url('./images/twitchd.png');
+  background-size: 32px 32px;
+}
+
+.rotate-on-hover {
+  transition: transform 2s; /* add a transition effect */
+}
+
+.rotate-on-hover:hover {
+  transform: rotate(360deg); /* rotate the image 45 degrees when hovered */
 }
